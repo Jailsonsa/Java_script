@@ -1,0 +1,6 @@
+
+
+// início da aplicação
+console.clear();
+console.log("A");
+console.log("B");
