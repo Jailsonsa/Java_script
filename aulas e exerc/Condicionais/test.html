@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesntando...</title>
+</head>
+<body>
+    Velocidade do carro <input type="number" name="cx1'" id="cx1">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resu"></div>
+
+
+    <script>
+        function calcular() {
+            let caixa1 = document.getElementById('cx1')
+            let resultado = document.querySelector("div#resu")
+            let velocidade = Number(caixa1.value)
+
+            resultado.innerHTML = `<p>Sua velocidade atual é ${velocidade} <strong> km/h </strong></p>`
+            if (velocidade > 60) {
+                resultado.innerHTML += ` <p>Atenção você foi <strong> MULTADO! </strong> estava acima da velocidade permitida.</p> `
+            }
+            resultado.innerHTML += ` Dirija sempre com o cinto de segurançã! `
+        }
+    </script>
+</body>
+</html>

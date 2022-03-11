@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click</title>
+    <style>
+        div#Lugar {
+            font: normal 19pt verdana;
+            background-image: linear-gradient(to bottom, red, blue, green, yellow, black);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="Lugar"> Click aqui...</div>
+    
+    <script>
+        var eventos = document.getElementById('Lugar')
+        eventos.addEventListener('click', Clicar);
+        eventos.addEventListener('mouseenter', Entrar);
+        eventos.addEventListener('mouseout', Sair);
+
+        function Clicar() {
+            eventos.innerText = 'Irruuu Clicouu!'
+        }
+
+        function Entrar() {
+            eventos.innerText = 'Entrouu!'
+        }
+
+        function Sair() {
+            eventos.innerText = 'Saiuu!'
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+/*==============RESET===============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(77, 77, 255);
+    font: normal 15pt Arial;
+}
+
+
+/*=============HEADER==============*/
+
+header{
+    background: rgb(30, 30, 63);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*============MAIN==============*/
+
+section{
+    background: white;
+    border-radius: 20px;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.534);
+}
+
+div{
+    text-align: center;
+    padding: 15px;
+}
+
+#msg{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#imagem{
+    border-radius: 50%;
+    width: 350px;
+}
+
+#imagem:hover{
+    box-shadow: 5px 1px 15px rgb(97, 97, 97);
+}
+
+/*=============FOOTER================*/
+footer{
+    background: black;
+    color: #fff;
+    padding: 20px;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+}

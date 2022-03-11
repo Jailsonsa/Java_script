@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test DOM</title>
+    <style>
+        div#Local {
+            font: normal 20pt Verdana;
+            background-image: linear-gradient( 45deg, red, blue);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div id="Local">
+        Clik...
+    </div>
+
+    <script>
+    let eventos = document.getElementById('Local')
+        eventos.addEventListener('click', Clicar)
+        eventos.addEventListener('mouseenter', Entrar)
+        eventos.addEventListener('mouseout', Sair)
+        // Vai ouvir e quando determinado evento acontecer ele vai rodar
+
+        function Clicar() {
+            eventos.innerText = 'Clicou'
+
+        }
+        function Entrar() {
+            eventos.innerText = 'Entrou'
+        }
+        function Sair() {
+            eventos.innerText = 'Saiu'
+        }
+    </script>
+</body>
+</html>

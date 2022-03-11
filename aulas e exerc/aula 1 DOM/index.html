@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: blue;
+            color: white;
+            font-size: 19px;
+            font: 19px verdana;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Iniciando estudos com DOM</h1>
+
+    <section id="seção1">
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar <strong>DOM</strong> em Javascript.</p>
+        <div>Clique em mim</div>
+    </section>
+    
+    
+    <script>
+        /*let section = window.document.getElementById('seção1')
+        var h1 = window.document.getElementsByTagName("h1")[0];
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1];
+        */
+
+        // window.alert(p1.innerText)
+
+        let corpo = document.querySelector('body')
+        corpo.style.color = 'black'
+        corpo.style.background = 'white'
+
+        let teste0 = document.querySelector('h1.titulo')
+        teste0.style.background = 'blue'
+        teste0.style.textAlign = 'center'
+        teste0.style.padding = '40px'
+        teste0.style.margin = '5px 15px 8px 15px'
+        teste0.style.borderRadius = '20px'
+        teste0.style.boxShadow = '2px 1px 10px black'
+        
+
+
+        let teste1 = document.querySelector('section#seção1')
+        teste1.style.background = 'yellow'
+        teste1.style.padding = '50px'
+        teste1.style.textAlign = 'center'
+        teste1.style.lineHeight = '3em'
+        teste1.style.margin = '15px 70px 5px 70px'
+        teste1.style.borderRadius = '20px'
+        teste1.style.boxShadow = '2px 1px 10px black'
+
+
+        /*
+        section.style.background = 'white' 
+        section.style.margin = '40px'
+        section.style.padding = '100px'
+        section.style.fontSize = '20px'
+        corpo.style.background = 'red'
+        corpo.style.color = 'black'
+        corpo.style.fontFamily = 'monospace'
+        corpo.style.textAlign = 'center'
+        h1.style.marginTop = '30px'
+        h1.style.background ='white'
+        h1.style.padding = '20px'
+        h1.style.margin = '40px'
+        h1.style.textAlign = 'center'
+        */
+        
+    </script>
+</body>
+</html>
