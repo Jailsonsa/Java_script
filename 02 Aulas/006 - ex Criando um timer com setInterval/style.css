@@ -1,0 +1,61 @@
+:root{
+    --primary-color:black;
+}
+
+*{
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: Verdana, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.container{
+    max-width: 640px;
+    background-color: #fff;
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.relogio{
+    font-size: 38px;
+}
+
+button{
+    height: 35px;
+    color: green;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+button:focus{
+    color: black;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.pausado{
+    color: orange;
+}
+
+.iniciado{
+    color: green;
+}
+
+.zerado{
+    color: red;
+}
