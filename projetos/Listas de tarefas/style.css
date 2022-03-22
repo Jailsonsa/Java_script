@@ -1,0 +1,27 @@
+:root{
+    --primary-color:#000;
+}
+
+*{
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: Verdana, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.container{
+    max-width: 640px;
+    background-color: #fff;
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+
