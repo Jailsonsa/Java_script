@@ -10,7 +10,7 @@
     <h1>Somando Valores</h1>
     <input type="number" name="myBt1" id="myBt1"> +
     <input type="number" name="myBt2" id="myBt2">
-    <input type="button" value="Somar" onclick="Somar()">
+    <input type="button" value="Somar" onclick="somas()">
     <div id="resu">Resultado</div>
 
     <script>
@@ -20,8 +20,8 @@
             let resultado = document.getElementById('resu')
             var num1 = Number(bt1.value);
             var num2 = Number(bt2.value);
-            const soma = num1 + num2
-            resultado.innerHTML = ` O resultado da soma entre ${numero1} e ${numero2} é : <strong> ${soma} </strong> `
+            const somas = num1 + num2
+            resultado.innerHTML = ` O resultado da soma entre ${num1} e ${num2} é : <strong> ${somas} </strong> `
 
         } 
 

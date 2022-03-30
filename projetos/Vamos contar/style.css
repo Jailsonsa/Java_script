@@ -1,0 +1,67 @@
+/*=============RESET================*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: #2f93f083;
+    padding: 5px;
+}
+
+/*================HEADER===============*/
+
+header{
+    color: #fff;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*==================MAIN===============*/
+
+section{
+    background: #fff;
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px #0000008a;
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    display: block; 
+}
+
+input{
+    font-size: 19px;
+    height: 30px;
+}
+
+#button{
+    margin: 6px;
+    padding: 4px;
+    border-radius: 6px;
+    border: none;
+}
+
+#button:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 10px #000000ab;
+}
+
+footer{
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

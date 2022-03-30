@@ -26,4 +26,5 @@ if (mes_atual == 0 || mes_atual == 1 || mes_atual == 2) {
     console.log("Nenhuma chuva de meteoro no período informada.");
 }
 
+switch
 
