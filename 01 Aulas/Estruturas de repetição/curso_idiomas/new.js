@@ -1,1 +1,0 @@
-let cursos_idiomas
