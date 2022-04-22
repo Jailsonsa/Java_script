@@ -1,51 +1,160 @@
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,400;1,500&display=swap');
+
+/*Design colors*/
+:root{
+    --main-color1: #34073D;
+    --main-color2: #c26dff;
+    --container-color:rgba(37, 37, 37, 0.1);
+}
 
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient( 450deg, #6540b4 10%, #BC78EC 100%);
+    background-image: linear-gradient( 450deg, var(--main-color1) 10%, var(--main-color2) 100%);
     color: #fff;
     text-align: center;
     padding-top: 55px;
+    display: flex;
 }     
 
+h2{
+    font-family: 'Josefin Slab', serif;
+    margin: 30px 0 ;
+    font-size: 50px;
+}
+
+#show-tasks{
+    margin-top: 30px;
+}
+
 #tasks-container{
-    background:rgba(255, 255, 255,.2);
-    position: relative;
-    width: 640px;
-    height: 400px;
+    background:var(--container-color);
+    width: 600px;
+    height: auto;
     padding: 50px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 37px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0,.8);
-}
-
-#add-tasks-form{
-    margin:25px;
-}
-
-#tasks-title{
-    padding: 8px 40px;
-    font-size: 17px;
-    font-family: Verdana, sans-serif;
-}
-
-#add-btn{
-    padding: 7px;
-    color: green;
-    font-size: 17px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0,.5);
     
 }
 
-#tasks-container h2{
-    font-family: 'Josefin Slab', serif;
-    margin: 10px;
-    font-size: 52px;
+/* Tasks form */
+#tasks-header{
+    margin-top: 20px;
 }
 
-.task-box{
-    font-family: 'BhuTuka Expanded One', cursive;
-    font-size: 24px;
+#add-tasks-form{
+    position: relative;
+}
+
+#add-tasks-form input{
+    box-sizing: border-box;
+    border: 1px solid var(--main-color1);
+    background: #fff;
+    color: var(--main-color1);
+    height: 48px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    font-family:monospace,Verdana, sans-serif;
+    border-radius: 7px;
+}
+
+#add-tasks-form input:focus{
+    outline: none;
+}
+
+#add-tasks-form input::placeholder{
+    color:#34073d8f;
+}
+
+#add-btn{
+    position: absolute;
+    color: #c26dff;
+    cursor: pointer;
+    width: 60px;
+    height: 48px;
+    top: 0;
+    right: 0;
+    transition: .5s;
+    border-radius:  0 7px 7px 0;
+    border: 0.5px solid var(--main-color1);
+    align-items: center;
+}
+
+#add-btn:hover{
+    color: rgb(47, 255, 47);
+    background: var(--main-color1);
+    transition: all 1s;
+}
+
+ion-icon{
+    font-size: 25px;
+}
+
+/*Tasks container*/
+
+#task-list{
     list-style: none;
+    padding-left: 0;
+}
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 2px  solid var(--main-color1);
+    background-color: #fff;
+    color: var(--main-color1);
+    margin-bottom: 10px;
+    padding-left: 18px;
+    transition: .5s;
+    font-weight: bold;
+    font-family: 'BhuTuka Expanded One', serif;
+    font-size: 2 0px;
+}
+
+#task-list ion-icon{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+.done-btn{
+    right: 35px;
+}
+
+.remove-btn{
+    right: 0px;
+}
+
+
+.done-btn:hover{
+    color: #fff;
+    background-color:rgb(47, 255, 47);
+    transition: 1s;
+}
+
+
+.remove-btn:hover{
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    transition: 1s;
+}
+
+/*....*/
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color: var(--main-color1);
+    color: #fff;
+    text-decoration: line-through;
 }
