@@ -1,0 +1,11 @@
+
+{
+"nome": "Jailson",
+"Idade": 20,
+"esta_trabalhando": false,
+"detalhes_idade" : {
+    "data_nascim": "07/04/2002",
+    "hora_nascim": 10.00 
+},
+"hobbies": ["Programar", 1, 2, true, false, null]
+}
